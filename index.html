@@ -129,51 +129,56 @@
         }
         
         /* Center Image - NO BG */
-.hero-image {
-    position: relative;
-    z-index: 2;
-    display: block; 
-    margin: -1rem auto; 
-    
-    /* PANG-MOBILE NA LAKI (Medyo pinaliit para hindi sakop buong screen) */
-    height: 45vh; 
-    max-height: 400px; 
-    width: auto;
-    max-width: 95%; 
-    
-    object-fit: contain;
-    filter: drop-shadow(0 25px 50px rgba(0,0,0,0.5));
-    animation: float 6s ease-in-out infinite;
-}
+        /* Center Image - NO BG */
+        .hero-image {
+            position: relative;
+            z-index: 2;
+            display: block; 
+            margin: -1rem auto; 
+            
+            /* DITO MO PWEDENG ILAGAY ANG MANUAL ADJUSTMENT (Optional): */
+            /* top: 0px; */  /* Palitan mo ng negative (e.g., -20px) para umangat */
+            /* left: 0px; */ /* Palitan ng positive para pakanan, negative para pakaliwa */
+            
+            /* PANG-MOBILE NA LAKI */
+            height: 45vh; 
+            max-height: 400px; 
+            width: auto;
+            max-width: 95%; 
+            
+            object-fit: contain;
+            filter: drop-shadow(0 25px 50px rgba(0,0,0,0.5));
+            animation: float 6s ease-in-out infinite;
+        }
 
-@media (min-width: 640px) { /* Para sa mga Tablet */
-    .hero-image {
-        height: 50vh;
-        max-height: 450px;
-    }
-}
+        @media (min-width: 640px) { /* Para sa mga Tablet */
+            .hero-image {
+                height: 50vh;
+                max-height: 450px;
+            }
+        }
 
-@media (min-width: 768px) { /* Para sa Laptops at Landscape Tablets */
-    .hero-image {
-        height: 70vh; /* Tinaasan from 55vh */
-        max-height: 750px; /* Nilakihan ang limit */
-        margin: -3rem auto; /* Inangat nang konti para balance sa laki */
-    }
-}
+        @media (min-width: 768px) { /* Para sa Laptops at Landscape Tablets */
+            .hero-image {
+                height: 70vh;
+                max-height: 750px;
+                margin: -3rem auto;
+            }
+        }
 
-@media (min-width: 1024px) { /* Para sa malalaking Desktop Monitors */
-    .hero-image {
-        height: 85vh; /* Halos sakop na yung vertical space ng screen */
-        max-height: 900px; /* Super laki na limit para makita ang details ng drawing mo */
-        margin: -4rem auto; 
-    }
-}
-
+        @media (min-width: 1024px) { /* Para sa malalaking Desktop Monitors */
+            .hero-image {
+                height: 85vh;
+                max-height: 900px;
+                margin: -4rem auto; 
+            }
+        }
         
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-15px); }
         }
+
         
         /* Bottom text - NASA GILID NA */
         .bottom-text-container {
