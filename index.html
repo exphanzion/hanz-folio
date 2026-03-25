@@ -129,18 +129,25 @@
         }
         
         /* Center Image - NO BG */
-        .hero-image {
-            position: relative;
-            z-index: 2;
-            height: 40vh;
-            max-height: 350px;
-            width: auto;
-            max-width: 80%;
-            object-fit: contain;
-            filter: drop-shadow(0 25px 50px rgba(0,0,0,0.5));
-            animation: float 6s ease-in-out infinite;
-            margin: -1rem 0;
-        }
+.hero-image {
+    position: relative;
+    z-index: 2;
+    
+    /* CENTERING FIX */
+    display: block; 
+    margin: -1rem auto; /* Yung 'auto' sa dulo ang magpapagitna dito */
+    
+    /* SIZE INCREASE */
+    height: 60vh; /* Tinaasan from 40vh */
+    max-height: 500px; /* Tinaasan from 350px. Pwede mo pa lakihan if needed! */
+    width: auto;
+    max-width: 95%; /* Tinaasan from 80% para mas sakop ang screen */
+    
+    object-fit: contain;
+    filter: drop-shadow(0 25px 50px rgba(0,0,0,0.5));
+    animation: float 6s ease-in-out infinite;
+}
+
         
         @media (min-width: 640px) {
             .hero-image {
