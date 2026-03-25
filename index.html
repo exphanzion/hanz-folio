@@ -153,20 +153,22 @@
     }
 }
 
-@media (min-width: 768px) { /* Para sa Laptops */
+@media (min-width: 768px) { /* Para sa Laptops at Landscape Tablets */
     .hero-image {
-        height: 55vh;
-        max-height: 500px;
-        margin: -2rem auto; /* Para manatiling nasa gitna */
+        height: 70vh; /* Tinaasan from 55vh */
+        max-height: 750px; /* Nilakihan ang limit */
+        margin: -3rem auto; /* Inangat nang konti para balance sa laki */
     }
 }
 
-@media (min-width: 1024px) { /* Para sa malalaking Desktop Monitor */
+@media (min-width: 1024px) { /* Para sa malalaking Desktop Monitors */
     .hero-image {
-        height: 65vh;
-        max-height: 600px;
+        height: 85vh; /* Halos sakop na yung vertical space ng screen */
+        max-height: 900px; /* Super laki na limit para makita ang details ng drawing mo */
+        margin: -4rem auto; 
     }
 }
+
         
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
